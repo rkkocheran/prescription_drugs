@@ -1,7 +1,7 @@
 ## Analysis of TN Medicare Part D Prescriber and Prescription Data
 
 ### PostgreSQL queries are used to find answers to the following questions:
-1. a. Which prescriber had the highest total number of claims (totaled over all drugs)? Report the nppes_provider_first_name, nppes_provider_last_org_name,  specialty_description, and the total number of claims.
+1. Which prescriber had the highest total number of claims (totaled over all drugs)? Report the nppes_provider_first_name, nppes_provider_last_org_name,  specialty_description, and the total number of claims.
 
 2. a. Which specialty had the most total number of claims (totaled over all drugs)?
 
