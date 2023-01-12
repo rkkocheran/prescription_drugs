@@ -25,17 +25,6 @@
 
    c. What is the largest (in terms of population) county which is not included in a CBSA? Report the county name and population.
 
-6. 
-   a. Find all rows in the prescription table where total_claims is at least 3000. Report the drug_name and the total_claim_count.
+6. Find all rows in the prescription table where total_claims is at least 3000. Report the drug_name, the total_claim_count and npi. For each instance found, add a column that indicates whether the drug is an opioid, and a column that gives the prescriber's first and last name.
 
-   b. For each instance that you found in part a, add a column that indicates whether the drug is an opioid.
-
-   c. Add another column to you answer from the previous part which gives the prescriber first and last name associated with each row.
-
-7. Generate a full list of all pain management specialists in Nashville and the number of claims they had for each opioid. Note: the results from all 3 parts should have 637 rows.
-
-   a. Create a list of all npi/drug_name combinations for pain management specialists in the city of Nashville, where the drug is an opioid. This will only require the prescriber and drug tables.
-
-   b. Report the number of claims per drug per prescriber. Include all combinations, whether or not the prescriber had any claims. Report the npi, the drug name, and the number of claims.
-    
-   c. Fill in any missing values for total_claim_count with 0.
+7. Generate a full list of all pain management specialists in Nashville and the number of claims they had for each opioid. Report the number of claims per drug per prescriber. Include all combinations, whether or not the prescriber had any claims. Report the npi, the drug name, and the number of claims. Fill in any missing values for total_claim_count with 0.
