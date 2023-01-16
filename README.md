@@ -29,3 +29,6 @@ This is a repository for a project completed during my Data Analytics apprentice
 6. Find all rows in the prescription table where total_claims is at least 3000. Report the drug_name, the total_claim_count and npi. For each instance found, add a column that indicates whether the drug is an opioid, and a column that gives the prescriber's first and last name.
 
 7. Generate a full list of all pain management specialists in Nashville and the number of claims they had for each opioid. Report the number of claims per drug per prescriber. Include all combinations, whether or not the prescriber had any claims. Report the npi, the drug name, and the number of claims. Fill in any missing values for total_claim_count with 0.
+
+8. How many npi numbers appear in the prescriber table but not in the prescription table?
+
