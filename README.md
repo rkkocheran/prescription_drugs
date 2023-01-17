@@ -1,5 +1,5 @@
 ## Analysis of TN Medicare Part D Prescriber and Prescription Data
-This is a repository for a project completed during my Data Analytics apprenticeship at [Nashville Software School](https://nashvillesoftwareschool.com/). In this project, I explored medical provider, prescription, medication and county-level data using PowerBI and SQL to calculate various prescription statistics. The technology and skills employed to achieve this goal include: PowerBI, SQL, PostgreSQL, pgAdmin, and ERDs.
+This is a repository for a project completed during my Data Analytics apprenticeship at [Nashville Software School](https://nashvillesoftwareschool.com/). In this project, I explored medical provider, prescription, medication and county-level data using Power BI and SQL to calculate various prescription statistics. The technology and skills employed to achieve this goal include: PowerBI, SQL, PostgreSQL, pgAdmin, and ERDs.
 
 ### PostgreSQL queries are used to find answers to the following questions:
 1. Which prescriber had the highest total number of claims (totaled over all drugs)? Report the nppes_provider_first_name, nppes_provider_last_org_name,  specialty_description, and the total number of claims.
