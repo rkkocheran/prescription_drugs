@@ -32,3 +32,10 @@ This is a repository for a project completed during my Data Analytics apprentice
 
 8. How many npi numbers appear in the prescriber table but not in the prescription table?
 
+9.
+    a. Find the top five drugs (generic_name) prescribed by prescribers with the specialty of Family Practice.
+
+    b. Find the top five drugs (generic_name) prescribed by prescribers with the specialty of Cardiology.
+
+    c. Which drugs are in the top five prescribed by Family Practice prescribers and Cardiologists? Combine what you did for parts a and b into a single query to answer this question.
+
