@@ -43,38 +43,36 @@ ORDER BY total_claims DESC;
 
 
 /* 9c. Which drugs are in the top five prescribed by Family Practice prescribers and Cardiologists? 
-       drug_name:	                  total_claims:
-       ATORVASTATIN CALCIUM	      429152
-       AMLODIPINE BESYLATE	      391236
-       LEVOTHYROXINE SODIUM	      389447
-       LISINOPRIL	                  387787
-       FUROSEMIDE	                  318164
+       drug_name:                   total_claims:
+       ATORVASTATIN CALCIUM         429152
+       AMLODIPINE BESYLATE          391236
+       LEVOTHYROXINE SODIUM         389447
+       LISINOPRIL                   387787
+       FUROSEMIDE                   318164
 */
 
 WITH claims_cardio AS (
-SELECT specialty_description AS desc_cardio,
-       drug_name, 
-       SUM (total_claim_count)
-            AS total_claims_cardio
-FROM prescription
-INNER JOIN prescriber 
-USING (npi)
-WHERE specialty_description IN ('Cardiology')
-GROUP BY drug_name, specialty_description
-ORDER BY drug_name
+      SELECT drug_name, 
+             SUM (total_claim_count) AS total_claims_cardio
+      FROM prescription
+      INNER JOIN prescriber 
+      USING (npi)
+      WHERE specialty_description IN ('Cardiology')
+      GROUP BY drug_name, 
+               specialty_description
+      ORDER BY drug_name
 ),
 
 claims_fam AS (
-SELECT specialty_description AS desc_fam,
-       drug_name, 
-       SUM (total_claim_count)
-            AS total_claims_fam
-FROM prescription
-INNER JOIN prescriber 
-USING (npi)
-WHERE specialty_description IN ('Family Practice')
-GROUP BY drug_name, specialty_description
-ORDER BY drug_name
+      SELECT drug_name, 
+             SUM (total_claim_count) AS total_claims_fam
+      FROM prescription
+      INNER JOIN prescriber 
+      USING (npi)
+      WHERE specialty_description IN ('Family Practice')
+      GROUP BY drug_name, 
+               specialty_description
+      ORDER BY drug_name
 )
 
 SELECT drug_name,
