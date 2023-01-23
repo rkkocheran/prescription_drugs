@@ -37,5 +37,6 @@ This is a repository for a project completed during my Data Analytics apprentice
 
     b. Find the top five drugs (generic_name) prescribed by prescribers with the specialty of Cardiology.
 
-    c. Which drugs are in the top five prescribed by Family Practice prescribers and Cardiologists? Combine what you did for parts a and b into a single query to answer this question.
+    c. Which drugs are in the top five prescribed by Family Practice prescribers and Cardiologists?
+
 
