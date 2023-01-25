@@ -39,4 +39,7 @@ This is a repository for a project completed during my Data Analytics apprentice
 
     c. Which drugs are in the top five prescribed by Family Practice prescribers and Cardiologists?
 
-
+10. Generate a list of the top prescribers in each of the major metropolitan areas of Tennessee.
+    a. Find the top 5 prescribers in Nashville in terms of the total number of claims (total_claim_count) across all drugs. Report the npi, the total number of claims, and include a column showing the city.
+    b. Report the same for Memphis.
+    c. Combine your results from a and b, along with the results for Knoxville and Chattanooga.
