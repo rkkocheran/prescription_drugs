@@ -43,3 +43,5 @@ This is a repository for a project completed during my Data Analytics apprentice
     a. Find the top 5 prescribers in Nashville in terms of the total number of claims (total_claim_count) across all drugs. Report the npi, the total number of claims, and include a column showing the city.
     b. Report the same for Memphis.
     c. Combine your results from a and b, along with the results for Knoxville and Chattanooga.
+
+11. Find all counties which had an above-average number of overdose deaths. Report the county name and number of overdose deaths.
