@@ -45,3 +45,7 @@ This is a repository for a project completed during my Data Analytics apprentice
     c. Combine your results from a and b, along with the results for Knoxville and Chattanooga.
 
 11. Find all counties which had an above-average number of overdose deaths. Report the county name and number of overdose deaths.
+
+12.
+    a. Write a query that finds the total population of Tennessee.
+    b. Build off of the query that you wrote in part a to write a query that returns for each county that county's name, its population, and the percentage of the total population of Tennessee that is contained in that county.
