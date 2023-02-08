@@ -49,3 +49,6 @@ This is a repository for a project completed during my Data Analytics apprentice
 12.
     a. Write a query that finds the total population of Tennessee.
     b. Build off of the query that you wrote in part a to write a query that returns for each county that county's name, its population, and the percentage of the total population of Tennessee that is contained in that county.
+
+13. Return the total number of claims for Interventional Pain Management and Pain Management.
+
