@@ -52,3 +52,5 @@ This is a repository for a project completed during my Data Analytics apprentice
 
 13. Return the total number of claims for Interventional Pain Management and Pain Management.
 
+14. Include the total number of claims between the previous two groups. Combine two queries with the UNION keyword to accomplish this.
+
