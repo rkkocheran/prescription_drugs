@@ -54,3 +54,5 @@ This is a repository for a project completed during my Data Analytics apprentice
 
 14. Include the total number of claims between the previous two groups. Combine two queries with the UNION keyword to accomplish this.
 
+15. Instead of UNION, use GROUPING SETS to achieve the same output.
+

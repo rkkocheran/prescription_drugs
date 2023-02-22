@@ -12,10 +12,9 @@ WITH pm_claims AS (
       GROUP BY specialty_description
 )
 
-SELECT '' AS specialty_description,
+SELECT NULL AS specialty_description,
        SUM(total_claims) AS total_claims
 FROM pm_claims
 UNION
 SELECT *
 FROM pm_claims
-ORDER BY specialty_description
