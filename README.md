@@ -56,3 +56,13 @@ This is a repository for a project completed during my Data Analytics apprentice
 
 15. Instead of UNION, use GROUPING SETS to achieve the same output.
 
+16. Additionally, report information about the number of opioid vs. non-opioid claims by these two specialties. Modify the query to produce the following chart:
+
+specialty_description         |opioid_drug_flag|total_claims|
+------------------------------|----------------|------------|
+                              |                |      129726|
+                              |Y               |       76143|
+                              |N               |       53583|
+Pain Management               |                |       72487|
+Interventional Pain Management|                |       57239|
+
