@@ -67,5 +67,8 @@ Pain Management               |                |       72487|
 Interventional Pain Management|                |       57239|
 
 17. Modify the query by replacing the GROUPING SETS with ROLLUP(opioid_drug_flag, specialty_description). How is the result different from the output from the previous query? 
-Answer: GROUPING SETS results in a table that is a UNION of each individual set according to its GROUP BY field, whereas ROLLUP introduces a heirarchy to the computed combinations and is a UNION of the grouping of each individual set along with the grouping of each field's combination with fields further down the heirarchy.
+Answer: GROUPING SETS results in the UNION of the query using each individual set, whereas ROLLUP introduces a heirarchy, returning grouping sets of the first set as well as combinations of the first set with all successive sets, including an empty set.
+
+18. Finally, use the CUBE function instead of ROLLUP. How does this impact the output?
+Answer: CUBE summarizes the data based all possible permutations of the given sets.
 
