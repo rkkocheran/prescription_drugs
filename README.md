@@ -72,3 +72,20 @@ Answer: GROUPING SETS results in the UNION of the query using each individual se
 18. Finally, use the CUBE function instead of ROLLUP. How does this impact the output?
 Answer: CUBE summarizes the data based all possible permutations of the given sets.
 
+19. In this question, your goal is to create a pivot table showing for each of the 4 largest cities in Tennessee (Nashville, Memphis, Knoxville, and Chattanooga), the total claim count for each of six common types of opioids: Hydrocodone, Oxycodone, Oxymorphone, Morphine, Codeine, and Fentanyl. For the purpose of this question, we will put a drug into one of the six listed categories if it has the category name as part of its generic name. For example, we could count both of "ACETAMINOPHEN WITH CODEINE" and "CODEINE SULFATE" as being "CODEINE" for the purposes of this question.
+
+The end result of this question should be a table formatted like this:
+
+city       |codeine|fentanyl|hyrdocodone|morphine|oxycodone|oxymorphone|
+-----------|-------|--------|-----------|--------|---------|-----------|
+CHATTANOOGA|   1323|    3689|      68315|   12126|    49519|       1317|
+KNOXVILLE  |   2744|    4811|      78529|   20946|    84730|       9186|
+MEMPHIS    |   4697|    3666|      68036|    4898|    38295|        189|
+NASHVILLE  |   2043|    6119|      88669|   13572|    62859|       1261|
+
+For this question, you should look into use the crosstab function, which is part of the tablefunc extension (https://www.postgresql.org/docs/9.5/tablefunc.html). In order to use this function, you must (one time per database) run the command
+	CREATE EXTENSION tablefunc;
+
+Hint #1: First write a query which will label each drug in the drug table using the six categories listed above.
+Hint #2: In order to use the crosstab function, you need to first write a query which will produce a table with one row_name column, one category column, and one value column. So in this case, you need to have a city column, a drug label column, and a total claim count column.
+Hint #3: The sql statement that goes inside of crosstab must be surrounded by single quotes. If the query that you are using also uses single quotes, you'll need to escape them by turning them into double-single quotes.
