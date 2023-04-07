@@ -1,10 +1,10 @@
-CREATE EXTENSION tablefunc;
+CREATE EXTENSION IF NOT EXISTS tablefunc;
 
 SELECT *
 FROM crosstab (
-      'SELECT city,
+     'SELECT city,
              opioid_label,
-             SUM (total_claim_count) AS total_claims
+             SUM(total_claim_count)::INTEGER AS total_claims
       FROM (SELECT nppes_provider_city AS city,
                    generic_name,
                    CASE WHEN generic_name ILIKE ''%codeine%'' THEN ''codeine''
@@ -29,10 +29,9 @@ FROM crosstab (
             GROUP BY city, opioid_label
             ORDER BY city, opioid_label'
 ) AS ct(city TEXT, 
-        codeine TEXT, 
-        fentanyl TEXT, 
-        hydrocodone TEXT, 
-        morphine TEXT,  
-        oxycodone TEXT,  
-        oxymorphone TEXT
-       )
+        codeine INTEGER, 
+        fentanyl INTEGER, 
+        hydrocodone INTEGER, 
+        morphine INTEGER,  
+        oxycodone INTEGER,  
+        oxymorphone INTEGER);
